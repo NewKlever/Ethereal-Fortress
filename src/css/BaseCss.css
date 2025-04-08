@@ -1,0 +1,182 @@
+/* Скидання стилів для усунення стандартних відступів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Базові стилі для документа */
+html, body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #AB86CF;
+    color: #3D1367;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+/* Шапка */
+header {
+    margin: 1% 10%;
+    border-bottom: 2px solid #B0AB55;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+}
+header h1 {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+/* Посилання */
+a {
+    text-decoration: none;
+    color: #3D1367;
+    padding: 5px;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: #EA5449;
+    background-color:#3D1367;;
+    border-radius: 10px;
+}
+
+/* Горизонтальний список у навігації */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 2px;
+    margin: 0;
+}
+
+/* Основний контент */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+/* Контейнер для тексту і картинки */
+@media (max-width: 768px) {
+    .content-container-first {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .fortress-image {
+      max-width: 100%;
+    }
+}
+.content-container-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5% 0;
+    gap: 15%;
+    border-bottom: 2px solid #B0AB55;
+    padding-bottom: 30px;
+
+}
+
+/* Контейнер для списку і тексту */
+.text-container-first {
+    flex: 1;
+}
+
+.text-container-first ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #3D1367;
+    border-radius: 10px;
+}
+
+.text-container-first p {
+    margin: 0;
+    margin-top: 4%;
+}
+
+/* Картинка */
+.fortress-image {
+    max-width: 35%;
+    height: auto;
+    border: 2px solid #AB86CF;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.content-container-second {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1% 0;
+    border-bottom: 2px solid #B0AB55;
+    padding-bottom: 10px;
+
+}
+
+.notepad-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+.notepade-description{
+    text-align: center;
+    margin-top: 5px;
+}
+/* Переробити */
+.notepad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 0;
+    border-bottom: 2px solid #B0AB55;
+    padding-bottom: 10px;
+
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3D1367;
+    color: white;
+}
